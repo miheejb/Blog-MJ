@@ -29,7 +29,15 @@ const contactContent =
 app.get("/", (req,res)=>{ 
 
     
- res.render("home.ejs", {ejsHomeStartingContent: homeStartingContent});
+ res.render("home.ejs", {ejsContent: homeStartingContent});
+});
+
+app.get("/about", (req,res)=>{
+    res.render("about.ejs", {ejContent: aboutContent})
+});
+
+app.get("/contact", (req,res)=>{
+    res.render("contact.ejs", {ejsContent: contactContent})
 });
 
 
