@@ -33,3 +33,10 @@
 	font-size: 12px;
   color: #fff;
 }
+
+/*  compose */
+.form-group{
+    display: flex;
+    flex-direction: column;
+   
+}
